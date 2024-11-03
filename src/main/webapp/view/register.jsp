@@ -8,7 +8,7 @@
         <h1>Registro de Usuario</h1>
         <form action="../RegisterServlet" method="post">
             <label for="username">Usuario:</label>
-            <input type="text" id="username" name="username" required onkeyup="checkUsername()">
+            <input type="text" id="nombre_completo" name="nombre_completo" placeholder="Nombre completo">
             <br>
             <label for="password">Contraseña:</label>
             <input type="password" id="password" name="password" required>

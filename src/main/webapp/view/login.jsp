@@ -35,11 +35,11 @@
                     <div class="caja__trasera-login">
                         <h3>Bienvenido A Inconser</h3>
                         <p>Inicia sesion para entrar en la pagina</p>
-                        <button id="btn__iniciar-sesion">Iniciar SesiÃ³n</button>
+                        <button id="btn__iniciar-sesion">Iniciar Sesión</button>
                     </div>
                     <div class="caja__trasera-register">
                         <h3>Todavia no tienes una cuenta?</h3>
-                        <p>RegÃ­strate para que puedas iniciar sesiÃ³n</p>
+                        <p>Regi­strate para que puedas iniciar sesión</p>
                         <button id="btn__registrarse">RegÃ­strarse</button>
                     </div>
                 </div>
