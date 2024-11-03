@@ -13,10 +13,10 @@
             <div class="header-container">
                 <div class="logo">
                     <h1>Inconser</h1>
-                    <h2>Arquitectura e IngenierÃ­a</h2>
+                    <h2>Arquitectura e Ingenierí­a</h2>
                 </div>
                 <nav>
-                    <button class="menu-toggle" aria-label="Toggle Menu">â°</button>
+                    <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
                     <ul class="nav-menu">
                             <li><a href="index.jsp" class="nav-link">INICIO</a></li>
                             <li><a href="nosotros.jsp" class="nav-link">NOSOTROS</a></li>
@@ -29,7 +29,7 @@
                 <div class="user-menu">
                     <button class="user-btn">Usuario</button>
                     <div class="dropdown-content">
-                        <a href="#login">Iniciar SesiÃ³n</a>
+                        <a href="#login">Iniciar Sesión</a>
                         <a href="#register">Registrarse</a>
                     </div>
                 </div>
@@ -42,9 +42,9 @@
         <section class="services-filter-section">
             <div class="services-filters">
                 <button class="services-filter-btn" data-filter="todos">Todos</button>
-                <button class="services-filter-btn" data-filter="consultoria">ConsultorÃ­a</button>
-                <button class="services-filter-btn" data-filter="ingenieria">IngenierÃ­a</button>
-                <button class="services-filter-btn" data-filter="construccion">ConstrucciÃ³n</button>
+                <button class="services-filter-btn" data-filter="consultoria">Consultorí­a</button>
+                <button class="services-filter-btn" data-filter="ingenieria">Ingenierí­a</button>
+                <button class="services-filter-btn" data-filter="construccion">Construcción</button>
                 <button class="services-filter-btn" data-filter="mantenimiento">Mantenimiento</button>
             </div>
         </section>
@@ -53,88 +53,88 @@
                 <div class="services-card" data-category="consultoria">
                     <img src="servicio1.jpg" alt="Servicio 1">
                     <div class="services-overlay">
-                        <h3>ConsultorÃ­a</h3>
-                        <p>DescripciÃ³n del servicio de consultorÃ­a.</p>
+                        <h3>Consultorí­a</h3>
+                        <p>Descripción del servicio de consultorÃ­a.</p>
                     </div>
                 </div>
                 <div class="services-card" data-category="ingenieria">
                     <img src="servicio2.jpg" alt="Servicio 2">
                     <div class="services-overlay">
-                        <h3>IngenierÃ­a</h3>
-                        <p>DescripciÃ³n del servicio de ingenierÃ­a.</p>
+                        <h3>Ingenierí­a</h3>
+                        <p>Descripcón del servicio de ingenierí­a.</p>
                     </div>
                 </div>
                 <div class="services-card" data-category="consultoria">
                     <img src="servicio1.jpg" alt="Servicio 1">
                     <div class="services-overlay">
-                        <h3>ConsultorÃ­a</h3>
-                        <p>DescripciÃ³n del servicio de consultorÃ­a.</p>
+                        <h3>Consultorí­a</h3>
+                        <p>Descripción del servicio de consultorí­a.</p>
                     </div>
                 </div>
                 <div class="services-card" data-category="ingenieria">
                     <img src="servicio2.jpg" alt="Servicio 2">
                     <div class="services-overlay">
-                        <h3>IngenierÃ­a</h3>
-                        <p>DescripciÃ³n del servicio de ingenierÃ­a.</p>
+                        <h3>Ingenierí­a</h3>
+                        <p>Descripción del servicio de ingenierí­a.</p>
                     </div>
                 </div>
                 <div class="services-card" data-category="consultoria">
                     <img src="servicio1.jpg" alt="Servicio 1">
                     <div class="services-overlay">
-                        <h3>ConsultorÃ­a</h3>
-                        <p>DescripciÃ³n del servicio de consultorÃ­a.</p>
+                        <h3>Consultorí­a</h3>
+                        <p>Descripción del servicio de consultorí­a.</p>
                     </div>
                 </div>
                 <div class="services-card" data-category="ingenieria">
                     <img src="servicio2.jpg" alt="Servicio 2">
                     <div class="services-overlay">
-                        <h3>IngenierÃ­a</h3>
-                        <p>DescripciÃ³n del servicio de ingenierÃ­a.</p>
+                        <h3>Ingenierí­a</h3>
+                        <p>Descripción del servicio de ingenierí­a.</p>
                     </div>
                 </div>
                 <div class="services-card" data-category="consultoria">
                     <img src="servicio1.jpg" alt="Servicio 1">
                     <div class="services-overlay">
-                        <h3>ConsultorÃ­a</h3>
-                        <p>DescripciÃ³n del servicio de consultorÃ­a.</p>
+                        <h3>Consultorí­a</h3>
+                        <p>Descripción del servicio de consultorí­a.</p>
                     </div>
                 </div>
                 <div class="services-card" data-category="ingenieria">
                     <img src="servicio2.jpg" alt="Servicio 2">
                     <div class="services-overlay">
-                        <h3>IngenierÃ­a</h3>
-                        <p>DescripciÃ³n del servicio de ingenierÃ­a.</p>
+                        <h3>Ingenierí­a</h3>
+                        <p>Descripción del servicio de ingenierí­a.</p>
                     </div>
                 </div>
                 <div class="services-card" data-category="consultoria">
                     <img src="servicio1.jpg" alt="Servicio 1">
                     <div class="services-overlay">
-                        <h3>ConsultorÃ­a</h3>
-                        <p>DescripciÃ³n del servicio de consultorÃ­a.</p>
+                        <h3>Consultorí­a</h3>
+                        <p>Descripción del servicio de consultorí­a.</p>
                     </div>
                 </div>
                 <div class="services-card" data-category="ingenieria">
                     <img src="servicio2.jpg" alt="Servicio 2">
                     <div class="services-overlay">
-                        <h3>IngenierÃ­a</h3>
-                        <p>DescripciÃ³n del servicio de ingenierÃ­a.</p>
+                        <h3>Ingenierí­a</h3>
+                        <p>Descripción del servicio de ingenierí­a.</p>
                     </div>
                 </div>
                 <div class="services-card" data-category="construccion">
                     <img src="servicio3.jpg" alt="Servicio 3">
                     <div class="services-overlay">
-                        <h3>ConstrucciÃ³n</h3>
-                        <p>DescripciÃ³n del servicio de construcciÃ³n.</p>
+                        <h3>Construcción</h3>
+                        <p>Descripción del servicio de construcción.</p>
                     </div>
                 </div>
                 <div class="services-card" data-category="mantenimiento">
                     <img src="servicio4.jpg" alt="Servicio 4">
                     <div class="services-overlay">
                         <h3>Mantenimiento</h3>
-                        <p>DescripciÃ³n del servicio de mantenimiento.</p>
+                        <p>Descripción del servicio de mantenimiento.</p>
                     </div>
                 </div>
-                <!-- Agrega mÃ¡s servicios aquÃ­ -->
+                <!-- Agrega más servicios aqui­ -->
             </div>
             <div class="services-pagination"></div>
         </main>
@@ -145,7 +145,7 @@
         <footer>
             <div class="contact-info">
                 <p>Email: <a href="mailto:servicios@inconser.pe">servicios@inconser.pe</a></p>
-                <p>TelÃ©fono: +51 902 564 104</p>
+                <p>Teléfono: +51 902 564 104</p>
                 <div class="social-icons">
                     <a href="#"><img src="instagram.png" alt="Instagram"></a>
                     <a href="#"><img src="facebook.png" alt="Facebook"></a>
@@ -153,8 +153,8 @@
                 </div>
             </div>
             <div class="footer-info">
-                <p>DirecciÃ³n: Av. Santo Toribio 143, piso 12, San Isidro</p>
-                <p>Horario de AtenciÃ³n: L-V de 8:00 am a 6:30 pm</p>
+                <p>Dirección: Av. Santo Toribio 143, piso 12, San Isidro</p>
+                <p>Horario de Atención: L-V de 8:00 am a 6:30 pm</p>
             </div>
             <div class="footer-menu">
                 <ul>
