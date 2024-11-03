@@ -18,7 +18,7 @@
                     <h2>Arquitectura e Ingenieria</h2>
                 </div>
                 <nav>
-                    <button class="menu-toggle" aria-label="Toggle Menu">â°</button>
+                    <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
                     <ul class="nav-menu">
                             <li><a href="index.jsp" class="nav-link">INICIO</a></li>
                             <li><a href="nosotros.jsp" class="nav-link">NOSOTROS</a></li>
@@ -278,7 +278,7 @@
         <footer>
             <div class="contact-info">
                 <p>Email: <a href="mailto:servicios@inconser.pe">servicios@inconser.pe</a></p>
-                <p>TelÃ©fono: +51 902 564 104</p>
+                <p>Teléfono: +51 902 564 104</p>
                 <div class="social-icons">
                     <a href="#"><img src="instagram.png" alt="Instagram"></a>
                     <a href="#"><img src="facebook.png" alt="Facebook"></a>
@@ -286,8 +286,8 @@
                 </div>
             </div>
             <div class="footer-info">
-                <p>DirecciÃ³n: Av. Santo Toribio 143, piso 12, San Isidro</p>
-                <p>Horario de AtenciÃ³n: L-V de 8:00 am a 6:30 pm</p>
+                <p>Dirección: Av. Santo Toribio 143, piso 12, San Isidro</p>
+                <p>Horario de Atención: L-V de 8:00 am a 6:30 pm</p>
             </div>
             <div class="footer-menu">
                 <ul>

@@ -21,7 +21,7 @@
                         <h2>Arquitectura e Ingenieria</h2>
                     </div>
                     <nav>
-                        <button class="menu-toggle" aria-label="Toggle Menu">â°</button>
+                        <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
                         <ul class="nav-menu">
                             <li><a href="index.jsp" class="nav-link">INICIO</a></li>
                             <li><a href="nosotros.jsp" class="nav-link">NOSOTROS</a></li>
@@ -69,7 +69,7 @@
                     <div class="stat-item">
                         <img src="../Img/statYear.png" alt="Icono 3" class="stat-icon">
                         <h3 class="stat-number">10</h3>
-                        <p class="stat-description">Anios de Experiencia</p>
+                        <p class="stat-description">Años de Experiencia</p>
                     </div>
                 </div>
             </section>            
@@ -84,56 +84,56 @@
                                 <button class="carousel-button prev" style="background-color: transparent"><img src="../Img/flecha-izquierda.png" alt="" style="width: 30px; height: auto;"></button>
                                 <div class="carousel">
                                     <div class="carousel-track">
-                                        <!-- AquÃ­ puedes aÃ±adir hasta 10 servicios -->
+                                        <!-- Aquí­ puedes añadir hasta 10 servicios -->
                                         <div class="carousel-item">
                                             <img src="../Img/TeamPicture.png" alt="Servicio 1" class="servicio-img">
                                             <h3>Servicio 1</h3>
-                                            <p class="servicio-desc">DescripciÃ³n breve del servicio 1.</p>
+                                            <p class="servicio-desc">Descripción breve del servicio 1.</p>
                                         </div>
                                         <div class="carousel-item">
                                             <img src="../Img/TeamPicture.png" alt="Servicio 2" class="servicio-img">
                                             <h3>Servicio 2</h3>
-                                            <p class="servicio-desc">DescripciÃ³n breve del servicio 2.</p>
+                                            <p class="servicio-desc">Descripción breve del servicio 2.</p>
                                         </div>
                                         <div class="carousel-item">
                                             <img src="../Img/TeamPicture.png" alt="Servicio 3" class="servicio-img">
                                             <h3>Servicio 3</h3>
-                                            <p class="servicio-desc">DescripciÃ³n breve del servicio 3.</p>
+                                            <p class="servicio-desc">Descripción breve del servicio 3.</p>
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="../Img/servicio4.jpg" alt="Servicio 4" class="servicio-img">
+                                            <img src="../Img/TeamPicture.png" alt="Servicio 4" class="servicio-img">
                                             <h3>Servicio 4</h3>
-                                            <p class="servicio-desc">DescripciÃ³n breve del servicio 4.</p>
+                                            <p class="servicio-desc">Descripción breve del servicio 4.</p>
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="../Img/servicio5.jpg" alt="Servicio 5" class="servicio-img">
+                                            <img src="../Img/TeamPicture.png" alt="Servicio 5" class="servicio-img">
                                             <h3>Servicio 5</h3>
-                                            <p class="servicio-desc">DescripciÃ³n breve del servicio 5.</p>
+                                            <p class="servicio-desc">Descripción breve del servicio 5.</p>
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="../Img/servicio6.jpg" alt="Servicio 6" class="servicio-img">
+                                            <img src="../Img/TeamPicture.png" alt="Servicio 6" class="servicio-img">
                                             <h3>Servicio 6</h3>
-                                            <p class="servicio-desc">DescripciÃ³n breve del servicio 6.</p>
+                                            <p class="servicio-desc">Descripción breve del servicio 6.</p>
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="../Img/servicio7.jpg" alt="Servicio 7" class="servicio-img">
+                                            <img src="../Img/TeamPicture.png" alt="Servicio 7" class="servicio-img">
                                             <h3>Servicio 7</h3>
-                                            <p class="servicio-desc">DescripciÃ³n breve del servicio 7.</p>
+                                            <p class="servicio-desc">Descripción breve del servicio 7.</p>
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="../Img/servicio8.jpg" alt="Servicio 8" class="servicio-img">
+                                            <img src="../Img/TeamPicture.png" alt="Servicio 8" class="servicio-img">
                                             <h3>Servicio 8</h3>
-                                            <p class="servicio-desc">DescripciÃ³n breve del servicio 8.</p>
+                                            <p class="servicio-desc">Descripción breve del servicio 8.</p>
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="../Img/servicio9.jpg" alt="Servicio 9" class="servicio-img">
+                                            <img src="../Img/TeamPicture.png" alt="Servicio 9" class="servicio-img">
                                             <h3>Servicio 9</h3>
-                                            <p class="servicio-desc">DescripciÃ³n breve del servicio 9.</p>
+                                            <p class="servicio-desc">Descripción breve del servicio 9.</p>
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="../Img/servicio10.jpg" alt="Servicio 10" class="servicio-img">
+                                            <img src="../Img/TeamPicture.png" alt="Servicio 10" class="servicio-img">
                                             <h3>Servicio 10</h3>
-                                            <p class="servicio-desc">DescripciÃ³n breve del servicio 10.</p>
+                                            <p class="servicio-desc">Descripción breve del servicio 10.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -141,8 +141,8 @@
                             </div>
                         </div>
                         <div class="right-side">
-                            <h3>Somos una empresa constructora sÃ³lida y confiable que a lo largo de su experiencia ha sido capaz de manejar obras de gran envergadura brindando servicios de ingenierÃ­a y construcciÃ³n garantizando la satisfacciÃ³n de sus clientes, brindando un producto de calidad en un plazo de tiempo optimizado y a un buen costo.</h3>
-                            <a href="servicios.html" class="boton-inconser">Ver Servicios</a>
+                            <h3>Somos una empresa constructora sálida y confiable que a lo largo de su experiencia ha sido capaz de manejar obras de gran envergadura brindando servicios de ingenierí­a y construcción garantizando la satisfacción de sus clientes, brindando un producto de calidad en un plazo de tiempo optimizado y a un buen costo.</h3>
+                            <a href="servicios.jsp" class="boton-inconser">Ver Servicios</a>
                         </div>
                     </div>
                 </div>
@@ -159,46 +159,46 @@
             </button>
             <div class="carousel">
                 <div class="carousel-track">
-                    <!-- Agrega tus proyectos aquÃ­ -->
+                    <!-- Agrega tus proyectos aqui­ -->
                     <div class="carousel-item">
                         <img src="../Img/TeamPicture.png"Proyecto 1" class="project-img">
                         <h3>Proyecto 1</h3>
-                        <p class="project-desc">DescripciÃ³n breve del proyecto 1.</p>
+                        <p class="project-desc">Descripción breve del proyecto 1.</p>
                     </div>
                     <div class="carousel-item">
                         <img src="../Img/TeamPicture.png" alt="Proyecto 2" class="project-img">
                         <h3>Proyecto 2</h3>
-                        <p class="project-desc">DescripciÃ³n breve del proyecto 2.</p>
+                        <p class="project-desc">Descripción breve del proyecto 2.</p>
                     </div>
                     <div class="carousel-item">
                         <img src="../Img/TeamPicture.png" alt="Proyecto 3" class="project-img">
                         <h3>Proyecto 3</h3>
-                        <p class="project-desc">DescripciÃ³n breve del proyecto 3.</p>
+                        <p class="project-desc">Descripción breve del proyecto 3.</p>
                     </div>
                     <div class="carousel-item">
-                        <img src="../Img/proyecto4.jpg" alt="Proyecto 4" class="project-img">
+                        <img src="../Img/TeamPicture.png" alt="Proyecto 4" class="project-img">
                         <h3>Proyecto 4</h3>
-                        <p class="project-desc">DescripciÃ³n breve del proyecto 4.</p>
+                        <p class="project-desc">Descripción breve del proyecto 4.</p>
                     </div>
                     <div class="carousel-item">
-                        <img src="../Img/proyecto5.jpg" alt="Proyecto 5" class="project-img">
+                        <img src="../Img/TeamPicture.png" alt="Proyecto 5" class="project-img">
                         <h3>Proyecto 5</h3>
-                        <p class="project-desc">DescripciÃ³n breve del proyecto 5.</p>
+                        <p class="project-desc">Descripción breve del proyecto 5.</p>
                     </div>
                     <div class="carousel-item">
-                        <img src="../Img/proyecto5.jpg" alt="Proyecto 5" class="project-img">
+                        <img src="../Img/TeamPicture.png" alt="Proyecto 5" class="project-img">
                         <h3>Proyecto 5</h3>
-                        <p class="project-desc">DescripciÃ³n breve del proyecto 5.</p>
+                        <p class="project-desc">Descripción breve del proyecto 5.</p>
                     </div>
                     <div class="carousel-item">
-                        <img src="../Img/proyecto5.jpg" alt="Proyecto 5" class="project-img">
+                        <img src="../Img/TeamPicture.png" alt="Proyecto 5" class="project-img">
                         <h3>Proyecto 5</h3>
-                        <p class="project-desc">DescripciÃ³n breve del proyecto 5.</p>
+                        <p class="project-desc">Descripción breve del proyecto 5.</p>
                     </div>
                     <div class="carousel-item">
-                        <img src="../Img/proyecto5.jpg" alt="Proyecto 5" class="project-img">
+                        <img src="../Img/TeamPicture.png" alt="Proyecto 5" class="project-img">
                         <h3>Proyecto 5</h3>
-                        <p class="project-desc">DescripciÃ³n breve del proyecto 5.</p>
+                        <p class="project-desc">Descripción breve del proyecto 5.</p>
                     </div>
                 </div>
             </div>
@@ -213,31 +213,31 @@
 
             <!-- Footer -->
             <footer>
-                <div class="contact-info">
-                    <p>Email: <a href="mailto:servicios@inconser.pe">servicios@inconser.pe</a></p>
-                    <p>TelÃ©fono: +51 902 564 104</p>
-                    <div class="social-icons">
-                        <a href="#"><img src="instagram.png" alt="Instagram"></a>
-                        <a href="#"><img src="facebook.png" alt="Facebook"></a>
-                        <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
-                    </div>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:servicios@inconser.pe">servicios@inconser.pe</a></p>
+                <p>Teléfono: +51 902 564 104</p>
+                <div class="social-icons">
+                    <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
                 </div>
-                <div class="footer-info">
-                    <p>DirecciÃ³n: Av. Santo Toribio 143, piso 12, San Isidro</p>
-                    <p>Horario de AtenciÃ³n: L-V de 8:00 am a 6:30 pm</p>
-                </div>
-                <div class="footer-menu">
-                    <ul>
-                        <li><a href="#">Nosotros</a></li>
-                        <li><a href="#">Servicios</a></li>
-                        <li><a href="#">Proyectos</a></li>
-                        <li><a href="#">Clientes</a></li>
-                    </ul>
-                </div>
-                <div class="footer-logo">
-                    <img src="../Img/ccl.png" alt="CCL Logo">
-                </div>
-            </footer>
+            </div>
+            <div class="footer-info">
+                <p>Dirección: Av. Santo Toribio 143, piso 12, San Isidro</p>
+                <p>Horario de Atención: L-V de 8:00 am a 6:30 pm</p>
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Proyectos</a></li>
+                    <li><a href="#">Clientes</a></li>
+                </ul>
+            </div>
+            <div class="footer-logo">
+                <img src="../Img/ccl.png" alt="CCL Logo">
+            </div>
+        </footer>
         </div>
 
         <script>
