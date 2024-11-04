@@ -34,7 +34,7 @@
                     <div class="user-menu">
                         <button class="user-btn">Usuario</button>
                         <div class="dropdown-content">
-                            <a href="../Pages/IniciarSesion.html">Iniciar Sesion</a>
+                            <a href="../view/login.jsp">Iniciar Sesion</a>
                             <a href="../Pages/IniciarSesion.html">Registrarse</a>
                         </div>
                     </div>

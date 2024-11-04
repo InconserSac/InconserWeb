@@ -1,3 +1,4 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,18 +11,18 @@
             <div class="header-container">
                 <div class="logo">
                     <h1>Inconser</h1>
-                    <h2>Arquitectura e Ingeniería</h2>
+                    <h2>Arquitectura e Ingenierí­a</h2>
                 </div>
                 <nav>
                     <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
                     <ul class="nav-menu">
-                        <li><a href="index.html" class="nav-link">INICIO</a></li>
-                        <li><a href="nosotros.html" class="nav-link">NOSOTROS</a></li>
-                        <li><a href="proyectos.html" class="nav-link">PROYECTOS</a></li>
-                        <li><a href="servicios.html" class="nav-link">SERVICIOS</a></li>
-                        <li><a href="contacto.html" class="nav-link">CONTACTO</a></li>
-                        <li><a href="clientes.html" class="nav-link">CLIENTES</a></li>
-                    </ul>
+                            <li><a href="index.jsp" class="nav-link">INICIO</a></li>
+                            <li><a href="nosotros.jsp" class="nav-link">NOSOTROS</a></li>
+                            <li><a href="proyectos.jsp" class="nav-link">PROYECTOS</a></li>
+                            <li><a href="servicios.jsp" class="nav-link">SERVICIOS</a></li>
+                            <li><a href="contacto.jsp" class="nav-link">CONTACTO</a></li>
+                            <li><a href="../view/login.jsp" class="nav-link">CLIENTES</a></li>
+                        </ul>
                 </nav>
                 <div class="user-menu">
                     <button class="user-btn">Usuario</button>
@@ -33,7 +34,7 @@
             </div>
         </header>
 
-               <!-- Línea horizontal -->
+               <!-- LÃ­nea horizontal -->
                <hr class="custom-hr">
 
             <main>
@@ -41,13 +42,13 @@
                     <h2>Nosotros</h2>
                     <div class="about-container">
                         <div class="about-box">
-                            <button class="collapsible">¿QUIÉNES SOMOS?</button>
+                            <button class="collapsible">¿QUIENES SOMOS?</button>
                             <div class="content">
-                                <p>Somos una empresa peruana que ofrece servicios de gestión de proyectos, elaboración de estudios de preinversión, expedientes técnicos, ejecución y supervisión de obras en el sector público y privado, comprometidos con el desarrollo de soluciones sostenibles.</p>
+                                <p>Somos una empresa peruana que ofrece servicios de gestión de proyectos, elaboración de estudios de prevención, expedientes tecnicos, ejecución y supervisión de obras en el sector público y privado, comprometidos con el desarrollo de soluciones sostenibles.</p>
                             </div>
                         </div>
                         <div class="about-box">
-                            <button class="collapsible">¿POR QUÉ ELEGIR INCONSER?</button>
+                            <button class="collapsible">¿POR QUE ELEGIR INCONSER?</button>
                             <div class="content">
                                 <p>Gracias a nuestra amplia experiencia en el desarrollo y construcción de proyectos, hemos perfeccionado la capacidad de generar estimaciones de costos precisas. Nuestro objetivo es evitar cualquier desviación en el presupuesto y reducir los riesgos asociados al proyecto.</p>
                             </div>
@@ -71,8 +72,8 @@
                 <div class="valores-container">
                     <div class="valor-item">
                         <button class="valor-header">
-                            <span>⏱️ Sentido de urgencia</span>
-                            <span class="icono">⮟</span>
+                            <span>Sentido de urgencia</span>
+                            <span class="icono"></span>
                         </button>
                         <div class="valor-content">
                             <p>Actuamos con rapidez y eficiencia para responder a las necesidades de nuestros clientes, asegurando tiempos de entrega óptimos sin comprometer la calidad.</p>
@@ -80,8 +81,8 @@
                     </div>
                     <div class="valor-item">
                         <button class="valor-header">
-                            <span>🌟 Excelencia</span>
-                            <span class="icono">⮟</span>
+                            <span>Excelencia</span>
+                            <span class="icono"></span>
                         </button>
                         <div class="valor-content">
                             <p>Nos comprometemos a ofrecer servicios de la más alta calidad, basándonos en la experiencia y el conocimiento especializado de nuestro equipo.</p>
@@ -89,8 +90,8 @@
                     </div>
                     <div class="valor-item">
                         <button class="valor-header">
-                            <span>📈 Resultados</span>
-                            <span class="icono">⮟</span>
+                            <span>Resultados</span>
+                            <span class="icono"></span>
                         </button>
                         <div class="valor-content">
                             <p>Nos enfocamos en alcanzar y superar las expectativas de nuestros clientes, garantizando resultados precisos y sostenibles en cada proyecto.</p>
@@ -98,8 +99,8 @@
                     </div>
                     <div class="valor-item">
                         <button class="valor-header">
-                            <span>💼 Obsesión por el Cliente</span>
-                            <span class="icono">⮟</span>
+                            <span>Obsesión por el Cliente</span>
+                            <span class="icono"></span>
                         </button>
                         <div class="valor-content">
                             <p>Colocamos a nuestros clientes en el centro de todas nuestras decisiones, trabajando incansablemente para entender y satisfacer sus necesidades únicas.</p>
@@ -117,7 +118,7 @@
                     </div>
                     <div class="equipo-item">
                         <img src="../Img/TeamPicture.png" alt="Equipo 2">
-                        <div class="overlay">Ingeniería y desarrollo de proyectos industriales</div>
+                        <div class="overlay">Ingenierí­a y desarrollo de proyectos industriales</div>
                     </div>
                     <div class="equipo-item">
                         <img src="../Img/TeamPicture.png" alt="Equipo 3">
@@ -125,7 +126,7 @@
                     </div>
                     <div class="equipo-item">
                         <img src="../Img/TeamPicture.png" alt="Equipo 4">
-                        <div class="overlay">Planificación y consultoría en sostenibilidad</div>
+                        <div class="overlay">Planificación y consultorí­a en sostenibilidad</div>
                     </div>
                 </div>
             </section>

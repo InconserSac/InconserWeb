@@ -1,3 +1,11 @@
+<%-- 
+    Document   : contacto
+    Created on : 2 nov. 2024, 17:50:33
+    Author     : Johan
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,22 +14,22 @@
         <link rel="stylesheet" href="../Styles/styles.css"/>
     </head>
     <body>
-        
+
         <header class="fixed-header">
             <div class="header-container">
                 <div class="logo">
                     <h1>Inconser</h1>
-                    <h2>Arquitectura e Ingeniería</h2>
+                    <h2>Arquitectura e Ingenierí­a</h2>
                 </div>
                 <nav>
                     <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
                     <ul class="nav-menu">
-                        <li><a href="index.html" class="nav-link">INICIO</a></li>
-                        <li><a href="nosotros.html" class="nav-link">NOSOTROS</a></li>
-                        <li><a href="proyectos.html" class="nav-link">PROYECTOS</a></li>
-                        <li><a href="servicios.html" class="nav-link">SERVICIOS</a></li>
-                        <li><a href="contacto.html" class="nav-link">CONTACTO</a></li>
-                        <li><a href="clientes.html" class="nav-link">CLIENTES</a></li>
+                        <li><a href="index.jsp" class="nav-link">INICIO</a></li>
+                        <li><a href="nosotros.jsp" class="nav-link">NOSOTROS</a></li>
+                        <li><a href="proyectos.jsp" class="nav-link">PROYECTOS</a></li>
+                        <li><a href="servicios.jsp" class="nav-link">SERVICIOS</a></li>
+                        <li><a href="contacto.jsp" class="nav-link">CONTACTO</a></li>
+                        <li><a href="../view/login.jsp" class="nav-link">CLIENTES</a></li>
                     </ul>
                 </nav>
                 <div class="user-menu">
@@ -33,101 +41,101 @@
                 </div>
             </div>
         </header>
-        
-        
+
+
         <div class="contact-form-container">
             <h2>Solicita Nuestros Servicios</h2>
             <p>Por favor, completa el formulario para recibir una cotización precisa.</p>
             <form id="contact-form">
-              <fieldset>
-                <legend>Información Personal</legend>
-                <div class="form-row">
-                  <div class="form-group">
-                    <label for="name">Nombre Completo:</label>
-                    <input type="text" id="name" name="name" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group">
-                    <label for="phone">Teléfono:</label>
-                    <input type="tel" id="phone" name="phone" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="address">Dirección:</label>
-                    <input type="text" id="address" name="address">
-                  </div>
-                </div>
-              </fieldset>
-              <fieldset>
-                <legend>Detalles del Proyecto</legend>
-                <div class="form-group">
-                  <label for="service-type">Tipo de Servicio Solicitado:</label>
-                  <select id="service-type" name="service-type">
-                    <option value="servicio1">Servicio 1</option>
-                    <option value="servicio2">Servicio 2</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="project-description">Descripción del Proyecto:</label>
-                  <textarea id="project-description" name="project-description"></textarea>
-                </div>
-                <div class="form-row">
-                  <div class="form-group">
-                    <label for="start-date">Fecha de Inicio Deseada:</label>
-                    <input type="date" id="start-date" name="start-date">
-                  </div>
-                  <div class="form-group">
-                    <label for="end-date">Fecha de Finalización Deseada:</label>
-                    <input type="date" id="end-date" name="end-date">
-                  </div>
-                </div>
-              </fieldset>
-              <fieldset>
-                <legend>Presupuesto Estimado</legend>
-                <div class="form-group">
-                  <label for="budget">Rango de Presupuesto:</label>
-                  <select id="budget" name="budget">
-                    <option value="low">Bajo</option>
-                    <option value="medium">Medio</option>
-                    <option value="high">Alto</option>
-                  </select>
-                </div>
-              </fieldset>
-              <fieldset>
-                <legend>Preferencias de Comunicación</legend>
-                <div class="form-group">
-                  <label for="contact-method">Método Preferido de Contacto:</label>
-                  <select id="contact-method" name="contact-method">
-                    <option value="email">Correo Electrónico</option>
-                    <option value="phone">Teléfono</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="contact-time">Horario Preferido para Ser Contactado:</label>
-                  <input type="text" id="contact-time" name="contact-time">
-                </div>
-              </fieldset>
-              <fieldset>
-                <legend>Comentarios Adicionales</legend>
-                <div class="form-group">
-                  <label for="comments">Comentarios/Observaciones:</label>
-                  <textarea id="comments" name="comments"></textarea>
-                </div>
-              </fieldset>
-              <button type="submit">Enviar Solicitud</button>
+                <fieldset>
+                    <legend>Información Personal</legend>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nombre Completo:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Teléfono:</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Dirección:</label>
+                            <input type="text" id="address" name="address">
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Detalles del Proyecto</legend>
+                    <div class="form-group">
+                        <label for="service-type">Tipo de Servicio Solicitado:</label>
+                        <select id="service-type" name="service-type">
+                            <option value="servicio1">Servicio 1</option>
+                            <option value="servicio2">Servicio 2</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="project-description">Descripción del Proyecto:</label>
+                        <textarea id="project-description" name="project-description"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="start-date">Fecha de Inicio Deseada:</label>
+                            <input type="date" id="start-date" name="start-date">
+                        </div>
+                        <div class="form-group">
+                            <label for="end-date">Fecha de Finalización Deseada:</label>
+                            <input type="date" id="end-date" name="end-date">
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Presupuesto Estimado</legend>
+                    <div class="form-group">
+                        <label for="budget">Rango de Presupuesto:</label>
+                        <select id="budget" name="budget">
+                            <option value="low">Bajo</option>
+                            <option value="medium">Medio</option>
+                            <option value="high">Alto</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Preferencias de Comunicación</legend>
+                    <div class="form-group">
+                        <label for="contact-method">Método Preferido de Contacto:</label>
+                        <select id="contact-method" name="contact-method">
+                            <option value="email">Correo Electrónico</option>
+                            <option value="phone">Teléfono</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-time">Horario Preferido para Ser Contactado:</label>
+                        <input type="text" id="contact-time" name="contact-time">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Comentarios Adicionales</legend>
+                    <div class="form-group">
+                        <label for="comments">Comentarios/Observaciones:</label>
+                        <textarea id="comments" name="comments"></textarea>
+                    </div>
+                </fieldset>
+                <button type="submit">Enviar Solicitud</button>
             </form>
             <div id="confirmation-message" style="display:none;">
-              <p>Gracias por enviar tu solicitud. Nos pondremos en contacto en un plazo de 24-48 horas.</p>
+                <p>Gracias por enviar tu solicitud. Nos pondremos en contacto en un plazo de 24-48 horas.</p>
             </div>
-          </div>
-          
-          
-        
-       
+        </div>
+
+
+
+
         <!-- Footer -->
         <footer>
             <div class="contact-info">
@@ -158,6 +166,6 @@
 
 
         <script src="../Assets/scripts.js"></script>
-        
+
     </body>
 </html>

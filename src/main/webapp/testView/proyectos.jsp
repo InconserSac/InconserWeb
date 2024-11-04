@@ -1,3 +1,7 @@
+
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -11,24 +15,23 @@
             <div class="header-container">
                 <div class="logo">
                     <h1>Inconser</h1>
-                    <h1> Kevin prueba1</h1>
-                    <h2>Arquitectura e Ingeniería</h2>
+                    <h2>Arquitectura e Ingenieria</h2>
                 </div>
                 <nav>
                     <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
                     <ul class="nav-menu">
-                        <li><a href="index.html" class="nav-link">INICIO</a></li>
-                        <li><a href="nosotros.html" class="nav-link">NOSOTROS</a></li>
-                        <li><a href="proyectos.html" class="nav-link">PROYECTOS</a></li>
-                        <li><a href="servicios.html" class="nav-link">SERVICIOS</a></li>
-                        <li><a href="contacto.html" class="nav-link">CONTACTO</a></li>
-                        <li><a href="clientes.html" class="nav-link">CLIENTES</a></li>
-                    </ul>
+                            <li><a href="index.jsp" class="nav-link">INICIO</a></li>
+                            <li><a href="nosotros.jsp" class="nav-link">NOSOTROS</a></li>
+                            <li><a href="proyectos.jsp" class="nav-link">PROYECTOS</a></li>
+                            <li><a href="servicios.jsp" class="nav-link">SERVICIOS</a></li>
+                            <li><a href="contacto.jsp" class="nav-link">CONTACTO</a></li>
+                            <li><a href="../view/login.jsp" class="nav-link">CLIENTES</a></li>
+                        </ul>
                 </nav>
                 <div class="user-menu">
                     <button class="user-btn">Usuario</button>
                     <div class="dropdown-content">
-                        <a href="#login">Iniciar Sesión</a>
+                        <a href="#login">Iniciar SesiÃ³n</a>
                         <a href="#register">Registrarse</a>
                     </div>
                 </div>
@@ -55,7 +58,7 @@
                     <div class="project-overlay">
                         <h3>Proyecto 1</h3>
                         <p>Fecha de inicio: 01/01/2024</p>
-                        <p>Descripción: Construcción de puentes.</p>
+                        <p>DescripciÃ³n: ConstrucciÃ³n de puentes.</p>
                     </div>
                 </div>
                 <div class="project-card" data-status="nuevos">
@@ -63,7 +66,7 @@
                     <div class="project-overlay">
                         <h3>Proyecto 1</h3>
                         <p>Fecha de inicio: 01/01/2024</p>
-                        <p>Descripción: Construcción de puentes.</p>
+                        <p>DescripciÃ³n: ConstrucciÃ³n de puentes.</p>
                     </div>
                 </div>
                 <div class="project-card" data-status="nuevos">
@@ -71,7 +74,7 @@
                     <div class="project-overlay">
                         <h3>Proyecto 1</h3>
                         <p>Fecha de inicio: 01/01/2024</p>
-                        <p>Descripción: Construcción de puentes.</p>
+                        <p>DescripciÃ³n: ConstrucciÃ³n de puentes.</p>
                     </div>
                 </div>
                 <div class="project-card" data-status="nuevos">
@@ -79,7 +82,7 @@
                     <div class="project-overlay">
                         <h3>Proyecto 1</h3>
                         <p>Fecha de inicio: 01/01/2024</p>
-                        <p>Descripción: Construcción de puentes.</p>
+                        <p>DescripciÃ³n: ConstrucciÃ³n de puentes.</p>
                     </div>
                 </div>
                 <div class="project-card" data-status="nuevos">
@@ -87,7 +90,7 @@
                     <div class="project-overlay">
                         <h3>Proyecto 1</h3>
                         <p>Fecha de inicio: 01/01/2024</p>
-                        <p>Descripción: Construcción de puentes.</p>
+                        <p>DescripciÃ³n: ConstrucciÃ³n de puentes.</p>
                     </div>
                 </div>
                 <div class="project-card" data-status="nuevos">
@@ -95,7 +98,7 @@
                     <div class="project-overlay">
                         <h3>Proyecto 1</h3>
                         <p>Fecha de inicio: 01/01/2024</p>
-                        <p>Descripción: Construcción de puentes.</p>
+                        <p>DescripciÃ³n: ConstrucciÃ³n de puentes.</p>
                     </div>
                 </div>
                 <div class="project-card" data-status="nuevos">
@@ -103,7 +106,7 @@
                     <div class="project-overlay">
                         <h3>Proyecto 1</h3>
                         <p>Fecha de inicio: 01/01/2024</p>
-                        <p>Descripción: Construcción de puentes.</p>
+                        <p>DescripciÃ³n: ConstrucciÃ³n de puentes.</p>
                     </div>
                 </div>
                 <div class="project-card" data-status="nuevos">
@@ -111,7 +114,7 @@
                     <div class="project-overlay">
                         <h3>Proyecto 1</h3>
                         <p>Fecha de inicio: 01/01/2024</p>
-                        <p>Descripción: Construcción de puentes.</p>
+                        <p>DescripciÃ³n: ConstrucciÃ³n de puentes.</p>
                     </div>
                 </div>
                 <div class="project-card" data-status="nuevos">
@@ -119,7 +122,7 @@
                     <div class="project-overlay">
                         <h3>Proyecto 1</h3>
                         <p>Fecha de inicio: 01/01/2024</p>
-                        <p>Descripción: Construcción de puentes.</p>
+                        <p>Descripcion: Construccion de puentes.</p>
                     </div>
                 </div>
                 <div class="project-card" data-status="nuevos">
@@ -127,7 +130,7 @@
                     <div class="project-overlay">
                         <h3>Proyecto 1</h3>
                         <p>Fecha de inicio: 01/01/2024</p>
-                        <p>Descripción: Construcción de puentes.</p>
+                        <p>DescripciÃ³n: ConstrucciÃ³n de puentes.</p>
                     </div>
                 </div>
                 <div class="project-card" data-status="nuevos">
@@ -135,7 +138,7 @@
                     <div class="project-overlay">
                         <h3>Proyecto 1</h3>
                         <p>Fecha de inicio: 01/01/2024</p>
-                        <p>Descripción: Construcción de puentes.</p>
+                        <p>DescripciÃ³n: ConstrucciÃ³n de puentes.</p>
                     </div>
                 </div>
                 <div class="project-card" data-status="proceso">
@@ -144,7 +147,7 @@
                         <h3>Proyecto 2</h3>
                         <p>Fecha de inicio: 15/03/2023</p>
                         <p>Fecha de fin: 20/12/2023</p>
-                        <p>Descripción: Infraestructura vial.</p>
+                        <p>DescripciÃ³n: Infraestructura vial.</p>
                     </div>
                 </div>
                 <div class="project-card" data-status="proceso">
@@ -153,7 +156,7 @@
                         <h3>Proyecto 2</h3>
                         <p>Fecha de inicio: 15/03/2023</p>
                         <p>Fecha de fin: 20/12/2023</p>
-                        <p>Descripción: Infraestructura vial.</p>
+                        <p>DescripciÃ³n: Infraestructura vial.</p>
                     </div>
                 </div>
                 <div class="project-card" data-status="proceso">
@@ -162,7 +165,7 @@
                         <h3>Proyecto 2</h3>
                         <p>Fecha de inicio: 15/03/2023</p>
                         <p>Fecha de fin: 20/12/2023</p>
-                        <p>Descripción: Infraestructura vial.</p>
+                        <p>DescripciÃ³n: Infraestructura vial.</p>
                     </div>
                 </div>
                 <div class="project-card" data-status="proceso">
@@ -171,7 +174,7 @@
                         <h3>Proyecto 2</h3>
                         <p>Fecha de inicio: 15/03/2023</p>
                         <p>Fecha de fin: 20/12/2023</p>
-                        <p>Descripción: Infraestructura vial.</p>
+                        <p>DescripciÃ³n: Infraestructura vial.</p>
                     </div>
                 </div>
                 <div class="project-card" data-status="proceso">
@@ -180,7 +183,7 @@
                         <h3>Proyecto 2</h3>
                         <p>Fecha de inicio: 15/03/2023</p>
                         <p>Fecha de fin: 20/12/2023</p>
-                        <p>Descripción: Infraestructura vial.</p>
+                        <p>DescripciÃ³n: Infraestructura vial.</p>
                     </div>
                 </div>
                 <div class="project-card" data-status="proceso">
@@ -189,7 +192,7 @@
                         <h3>Proyecto 2</h3>
                         <p>Fecha de inicio: 15/03/2023</p>
                         <p>Fecha de fin: 20/12/2023</p>
-                        <p>Descripción: Infraestructura vial.</p>
+                        <p>DescripciÃ³n: Infraestructura vial.</p>
                     </div>
                 </div>
                 <div class="project-card" data-status="proceso">
@@ -198,7 +201,7 @@
                         <h3>Proyecto 2</h3>
                         <p>Fecha de inicio: 15/03/2023</p>
                         <p>Fecha de fin: 20/12/2023</p>
-                        <p>Descripción: Infraestructura vial.</p>
+                        <p>DescripciÃ³n: Infraestructura vial.</p>
                     </div>
                 </div>
                 <div class="project-card" data-status="proceso">
@@ -207,7 +210,7 @@
                         <h3>Proyecto 2</h3>
                         <p>Fecha de inicio: 15/03/2023</p>
                         <p>Fecha de fin: 20/12/2023</p>
-                        <p>Descripción: Infraestructura vial.</p>
+                        <p>DescripciÃ³n: Infraestructura vial.</p>
                     </div>
                 </div>
                 <div class="project-card" data-status="proceso">
@@ -216,7 +219,7 @@
                         <h3>Proyecto 2</h3>
                         <p>Fecha de inicio: 15/03/2023</p>
                         <p>Fecha de fin: 20/12/2023</p>
-                        <p>Descripción: Infraestructura vial.</p>
+                        <p>DescripciÃ³n: Infraestructura vial.</p>
                     </div>
                 </div>
                 <div class="project-card" data-status="proceso">
@@ -225,7 +228,7 @@
                         <h3>Proyecto 2</h3>
                         <p>Fecha de inicio: 15/03/2023</p>
                         <p>Fecha de fin: 20/12/2023</p>
-                        <p>Descripción: Infraestructura vial.</p>
+                        <p>DescripciÃ³n: Infraestructura vial.</p>
                     </div>
                 </div>
                 <div class="project-card" data-status="proceso">
@@ -234,7 +237,7 @@
                         <h3>Proyecto 2</h3>
                         <p>Fecha de inicio: 15/03/2023</p>
                         <p>Fecha de fin: 20/12/2023</p>
-                        <p>Descripción: Infraestructura vial.</p>
+                        <p>DescripciÃ³n: Infraestructura vial.</p>
                     </div>
                 </div>
                 <div class="project-card" data-status="proceso">
@@ -243,7 +246,7 @@
                         <h3>Proyecto 2</h3>
                         <p>Fecha de inicio: 15/03/2023</p>
                         <p>Fecha de fin: 20/12/2023</p>
-                        <p>Descripción: Infraestructura vial.</p>
+                        <p>DescripciÃ³n: Infraestructura vial.</p>
                     </div>
                 </div>
                 <div class="project-card" data-status="proceso">
@@ -252,7 +255,7 @@
                         <h3>Proyecto 2</h3>
                         <p>Fecha de inicio: 15/03/2023</p>
                         <p>Fecha de fin: 20/12/2023</p>
-                        <p>Descripción: Infraestructura vial.</p>
+                        <p>DescripciÃ³n: Infraestructura vial.</p>
                     </div>
                 </div>
                 <div class="project-card" data-status="finalizados">
@@ -261,10 +264,10 @@
                         <h3>Proyecto 3</h3>
                         <p>Fecha de inicio: 10/01/2022</p>
                         <p>Fecha de fin: 25/11/2022</p>
-                        <p>Descripción: Sistemas hidráulicos.</p>
+                        <p>DescripciÃ³n: Sistemas hidrÃ¡ulicos.</p>
                     </div>
                 </div>
-                <!-- Agrega más proyectos aquí -->
+                <!-- Agrega mÃ¡s proyectos aquÃ­ -->
             </div>
             
         </main>
@@ -304,3 +307,4 @@
         
     </body>
 </html>
+
