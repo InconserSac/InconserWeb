@@ -9,7 +9,9 @@ import java.io.IOException;
 import java.sql.SQLException;
 import org.mindrot.jbcrypt.BCrypt;
 import dao.UsuarioDAO;
+import dao.RolDAO;
 import model.Usuario;
+import model.Rol;
 
 @WebServlet(name = "ActualizarUsuarioServlet", urlPatterns = {"/ActualizarUsuarioServlet"})
 public class ActualizarUsuarioServlet extends HttpServlet {
@@ -19,20 +21,23 @@ public class ActualizarUsuarioServlet extends HttpServlet {
         String username = request.getParameter("username");
         String email = request.getParameter("email");
         String password = request.getParameter("password");
-        String rol = request.getParameter("rol");
-        
-        
-        
+        String nombreRol = request.getParameter("rol"); // Obtener el nombre del rol
         UsuarioDAO usuarioDAO = new UsuarioDAO();
+        RolDAO rolDAO = new RolDAO();
         try {
             Usuario usuario = usuarioDAO.obtenerUsuarioPorId(id);
             usuario.setUsername(username);
             usuario.setEmail(email);
+
             if (password != null && !password.isEmpty()) {
                 String hashedPassword = BCrypt.hashpw(password, BCrypt.gensalt());
                 usuario.setPassword(hashedPassword);
             }
-            usuario.setRol(rol); // Actualizar el rol
+
+            // Obtener el objeto Rol correspondiente y asignarlo
+            Rol rol = rolDAO.obtenerRolPorNombre(nombreRol);
+            usuario.setRol(rol);
+
             usuarioDAO.actualizarUsuario(usuario);
             response.sendRedirect("ListaUsuariosServlet");
         } catch (SQLException e) {

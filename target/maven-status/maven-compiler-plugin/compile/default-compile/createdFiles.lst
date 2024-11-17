@@ -1,9 +1,12 @@
+dao\RolDAO.class
 servlets\ActualizarUsuarioServlet.class
+model\Permiso.class
 model\Servicio.class
 servlets\LoginServlet.class
 servlets\AñadirServicioServlet.class
 servlets\RegisterServlet.class
 servlets\ReporteUsuariosServlet.class
+model\Rol.class
 model\Usuario.class
 util\DatabaseConnection.class
 dao\ServicioDAO.class

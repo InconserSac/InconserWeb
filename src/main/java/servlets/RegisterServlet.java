@@ -7,10 +7,12 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
+import org.mindrot.jbcrypt.BCrypt;
 import dao.UsuarioDAO;
+import dao.RolDAO;
 import java.io.PrintWriter;
 import model.Usuario;
-import org.mindrot.jbcrypt.BCrypt;
+import model.Rol;
 
 @WebServlet(name = "RegisterServlet", urlPatterns = {"/RegisterServlet"})
 public class RegisterServlet extends HttpServlet {
@@ -20,14 +22,30 @@ public class RegisterServlet extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         String email = request.getParameter("email");
-        String rol = request.getParameter("rol");
+        String nombreRol = request.getParameter("rol");
+
         // Encriptar la contraseña
         String hashedPassword = BCrypt.hashpw(password, BCrypt.gensalt());
+
+        // Obtener el rol correspondiente
+        RolDAO rolDAO = new RolDAO();
+        Rol rol = null;
         
+        try {
+            rol = rolDAO.obtenerRolPorNombre(nombreRol);
+            if (rol == null) {
+                throw new SQLException("El rol no existe en la base de datos.");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            response.getWriter().println("Error al obtener el rol: " + e.getMessage());
+            return;
+        }
+
         Usuario usuario = new Usuario(username, hashedPassword, email);
-        
         usuario.setNombreCompleto(nombreCompleto); // Añadir nombre completo
-        usuario.setRol(rol);
+        usuario.setRol(rol); // Asignar el objeto Rol
+
         UsuarioDAO usuarioDAO = new UsuarioDAO();
         
         try {
@@ -40,7 +58,7 @@ public class RegisterServlet extends HttpServlet {
                 try (PrintWriter out = response.getWriter()) {
                     out.println("<script type=\"text/javascript\">");
                     out.println("alert('El nombre de usuario ya existe, por favor elige otro.');");
-                    out.println("location='view/login.jsp';");
+                    out.println("location='view/registro.jsp';"); // Ajuste la redirección a la página de registro
                     out.println("</script>");
                 }
             } else {

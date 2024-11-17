@@ -1,6 +1,7 @@
 package model;
 
 public class Usuario {
+
     private int id;
     private String nombreCompleto;
     private String username;
@@ -8,7 +9,7 @@ public class Usuario {
     private String email;
     private String resetToken;
     private String foto;
-    private String rol;
+    private Rol rol;
 
     // Constructor sin parámetros
     public Usuario() {
@@ -61,7 +62,7 @@ public class Usuario {
     public void setResetToken(String resetToken) {
         this.resetToken = resetToken;
     }
-    
+
     public String getFoto() {
         return foto;
     }
@@ -69,19 +70,20 @@ public class Usuario {
     public void setFoto(String foto) {
         this.foto = foto;
     }
-    public String getRol() {
+
+    public Rol getRol() {
         return rol;
     }
 
-    public void setRol(String rol) {
+    public void setRol(Rol rol) {
         this.rol = rol;
     }
 
-    public Usuario(String foto, String rol) {
+    public Usuario(String foto, Rol rol) {
         this.foto = foto;
         this.rol = rol;
     }
-    
+
     public String getNombreCompleto() {
         return nombreCompleto;
     }
@@ -89,5 +91,14 @@ public class Usuario {
     public void setNombreCompleto(String nombreCompleto) {
         this.nombreCompleto = nombreCompleto;
     }
-    
+
+    // Atributos y métodos existentes 
+    public boolean tienePermiso(String nombrePermiso) {
+        for (Permiso permiso : this.rol.getPermisos()) {
+            if (permiso.getNombre().equals(nombrePermiso)) {
+                return true;
+            }
+        }
+        return false;
+    }
 }

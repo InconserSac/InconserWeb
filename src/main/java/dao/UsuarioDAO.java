@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import model.Rol;
 import model.Usuario;
 import org.mindrot.jbcrypt.BCrypt;
 import util.DatabaseConnection;
@@ -29,7 +30,11 @@ public class UsuarioDAO {
                 usuario.setPassword(storedHash);
                 usuario.setEmail(resultSet.getString("email"));
                 usuario.setResetToken(resultSet.getString("reset_token"));
-                usuario.setRol(resultSet.getString("rol"));
+                // Obtener el rol 
+                String nombreRol = resultSet.getString("rol");
+                RolDAO rolDAO = new RolDAO();
+                Rol rol = rolDAO.obtenerRolPorNombre(nombreRol);
+                usuario.setRol(rol);
                 return usuario;
             }
         }
@@ -43,8 +48,8 @@ public class UsuarioDAO {
         statement.setString(1, usuario.getUsername());
         statement.setString(2, usuario.getPassword());
         statement.setString(3, usuario.getEmail());
-        statement.setString(4, usuario.getRol());
-        statement.setString(5, usuario.getNombreCompleto()); // Añadir nombre completo
+        statement.setString(4, usuario.getRol().getNombre()); // Usar el nombre del rol
+        statement.setString(5, usuario.getNombreCompleto()); // Asegurarse de que el nombre completo se está proporcionando
         statement.executeUpdate();
     }
 
@@ -62,7 +67,11 @@ public class UsuarioDAO {
             usuario.setPassword(resultSet.getString("password"));
             usuario.setEmail(resultSet.getString("email"));
             usuario.setResetToken(resultSet.getString("reset_token"));
-            usuario.setRol(resultSet.getString("rol"));
+            String nombreRol = resultSet.getString("rol");
+            // Obtener el rol
+            RolDAO rolDAO = new RolDAO();
+            Rol rol = rolDAO.obtenerRolPorNombre(nombreRol);
+            usuario.setRol(rol);
             usuarios.add(usuario);
         }
         return usuarios;
@@ -81,7 +90,11 @@ public class UsuarioDAO {
             usuario.setPassword(resultSet.getString("password"));
             usuario.setEmail(resultSet.getString("email"));
             usuario.setResetToken(resultSet.getString("reset_token"));
-            usuario.setRol(resultSet.getString("rol"));
+            // Obtener el rol
+            String nombreRol = resultSet.getString("rol");
+            RolDAO rolDAO = new RolDAO();
+            Rol rol = rolDAO.obtenerRolPorNombre(nombreRol);
+            usuario.setRol(rol);
             return usuario;
         }
         return null;
@@ -94,7 +107,7 @@ public class UsuarioDAO {
         statement.setString(1, usuario.getUsername());
         statement.setString(2, usuario.getPassword());
         statement.setString(3, usuario.getEmail());
-        statement.setString(4, usuario.getRol());
+        statement.setString(4, usuario.getRol().getNombre());
         statement.setInt(5, usuario.getId());
         statement.executeUpdate();
     }
