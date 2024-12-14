@@ -1,5 +1,6 @@
 package model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Rol {
@@ -9,13 +10,20 @@ public class Rol {
 
     // Constructor sin parámetros
     public Rol() {
+        this.permisos = new ArrayList<>();
     }
 
     // Constructor con parámetros
     public Rol(int id, String nombre, List<Permiso> permisos) {
         this.id = id;
         this.nombre = nombre;
-        this.permisos = permisos;
+        this.permisos = permisos != null ? permisos : new ArrayList<>();
+    }
+
+    // Constructor con nombre únicamente
+    public Rol(String nombre) {
+        this();
+        this.nombre = nombre;
     }
 
     // Getters y setters

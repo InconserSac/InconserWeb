@@ -16,7 +16,7 @@ import model.Rol;
 
 @WebServlet(name = "RegisterServlet", urlPatterns = {"/RegisterServlet"})
 public class RegisterServlet extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+    public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String nombreCompleto = request.getParameter("nombre_completo");
         String username = request.getParameter("username");

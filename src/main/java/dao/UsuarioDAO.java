@@ -41,7 +41,7 @@ public class UsuarioDAO {
         return null;
     }
 
-    public void insertarUsuario(Usuario usuario) throws SQLException {
+    public boolean insertarUsuario(Usuario usuario) throws SQLException {
         Connection connection = DatabaseConnection.getConnection();
         String sql = "INSERT INTO usuarios (username, password, email, rol, nombre_completo) VALUES (?, ?, ?, ?, ?)";
         PreparedStatement statement = connection.prepareStatement(sql);
@@ -50,7 +50,8 @@ public class UsuarioDAO {
         statement.setString(3, usuario.getEmail());
         statement.setString(4, usuario.getRol().getNombre()); // Usar el nombre del rol
         statement.setString(5, usuario.getNombreCompleto()); // Asegurarse de que el nombre completo se está proporcionando
-        statement.executeUpdate();
+        int rowsInserted = statement.executeUpdate();
+        return rowsInserted > 0; // Retornar true si la inserción fue exitosa, false en caso contrario
     }
 
     public List<Usuario> obtenerTodosLosUsuarios() throws SQLException {
