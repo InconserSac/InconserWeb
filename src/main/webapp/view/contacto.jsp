@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -11,10 +11,10 @@
             <div class="header-container">
                 <div class="logo">
                         <h1>I n c o n s e r</h1>
-                    <h2>Arquitectura e Ingenierí­a</h2>
+                    <h2>Arquitectura e IngenierÃ­Â­a</h2>
                 </div>
                 <nav>
-                    <button class="menu-toggle" aria-label="Toggle Menu">?</button>
+                    <button class="menu-toggle" aria-label="Toggle Menu">â˜°</button>
                     <ul class="nav-menu">
                         <li><a href="index.jsp" class="nav-link">INICIO</a></li>
                         <li><a href="nosotros.jsp" class="nav-link">NOSOTROS</a></li>
@@ -26,7 +26,7 @@
                 </nav>
                 <div class="user-menu">
                     <% 
-    // Obtener el usuario de la sesión
+    // Obtener el usuario de la sesiÃ³n
     model.Usuario usuario = (model.Usuario) session.getAttribute("usuario");
         
     if (usuario != null) {
@@ -35,7 +35,7 @@
                     <div class="dropdown-content">
                         <a href="../view/login.jsp">Perfil De Usuario</a>
                         <form action="../LogoutServlet" method="get">
-                            <a href="#"><button style="background-color: red; color: white;" class="logout-btn" type="submit">Cerrar sesión</button></a>
+                            <a href="#"><button style="background-color: red; color: white;" class="logout-btn" type="submit">Cerrar sesiÃ³n</button></a>
                         </form>                       </div>
                         <% 
                             } else {
@@ -55,27 +55,27 @@
 
         <div class="contact-form-container">
             <h2>Solicita Nuestros Servicios</h2>
-            <p>Por favor, completa el formulario para recibir una cotización precisa.</p>
+            <p>Por favor, completa el formulario para recibir una cotizaciÃ³n precisa.</p>
             <form id="contact-form">
                 <fieldset>
-                    <legend>Información Personal</legend>
+                    <legend>InformaciÃ³n Personal</legend>
                     <div class="form-row">
                         <div class="form-group">
                             <label for="name">Nombre Completo:</label>
                             <input type="text" id="name" name="name" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Correo Electrónico:</label>
+                            <label for="email">Correo ElectrÃ³nico:</label>
                             <input type="email" id="email" name="email" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="phone">Teléfono:</label>
+                            <label for="phone">TelÃ©fono:</label>
                             <input type="tel" id="phone" name="phone" required>
                         </div>
                         <div class="form-group">
-                            <label for="address">Dirección:</label>
+                            <label for="address">DirecciÃ³n:</label>
                             <input type="text" id="address" name="address">
                         </div>
                     </div>
@@ -90,7 +90,7 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="project-description">Descripción del Proyecto:</label>
+                        <label for="project-description">DescripciÃ³n del Proyecto:</label>
                         <textarea id="project-description" name="project-description"></textarea>
                     </div>
                     <div class="form-row">
@@ -99,7 +99,7 @@
                             <input type="date" id="start-date" name="start-date">
                         </div>
                         <div class="form-group">
-                            <label for="end-date">Fecha de Finalización Deseada:</label>
+                            <label for="end-date">Fecha de FinalizaciÃ³n Deseada:</label>
                             <input type="date" id="end-date" name="end-date">
                         </div>
                     </div>
@@ -116,12 +116,12 @@
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>Preferencias de Comunicación</legend>
+                    <legend>Preferencias de ComunicaciÃ³n</legend>
                     <div class="form-group">
-                        <label for="contact-method">Método Preferido de Contacto:</label>
+                        <label for="contact-method">MÃ©todo Preferido de Contacto:</label>
                         <select id="contact-method" name="contact-method">
-                            <option value="email">Correo Electrónico</option>
-                            <option value="phone">Teléfono</option>
+                            <option value="email">Correo ElectrÃ³nico</option>
+                            <option value="phone">TelÃ©fono</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -150,7 +150,7 @@
         <footer>
             <div class="contact-info">
                 <p>Email: <a href="mailto:servicios@inconser.pe">servicios@inconser.pe</a></p>
-                <p>Teléfono: +51 902 564 104</p>
+                <p>TelÃ©fono: +51 902 564 104</p>
                 <div class="social-icons">
                     <a href="#"><img src="instagram.png" alt="Instagram"></a>
                     <a href="#"><img src="facebook.png" alt="Facebook"></a>
@@ -158,8 +158,8 @@
                 </div>
             </div>
             <div class="footer-info">
-                <p>Dirección: Av. Santo Toribio 143, piso 12, San Isidro</p>
-                <p>Horario de Atención: L-V de 8:00 am a 6:30 pm</p>
+                <p>DirecciÃ³n: Av. Santo Toribio 143, piso 12, San Isidro</p>
+                <p>Horario de AtenciÃ³n: L-V de 8:00 am a 6:30 pm</p>
             </div>
             <div class="footer-menu">
                 <ul>

@@ -1,12 +1,4 @@
-<%-- 
-    Document   : contacto
-    Created on : 2 nov. 2024, 17:50:33
-    Author     : Johan
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-
-<!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
