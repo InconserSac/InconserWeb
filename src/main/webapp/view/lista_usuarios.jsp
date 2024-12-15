@@ -2,16 +2,6 @@
 <%@ page import="java.util.List" %>
 <%@ page import="model.Usuario" %>
 <%@ page import="jakarta.servlet.http.HttpSession" %>
-<%
-    HttpSession currentSession = request.getSession(false);
-    if (currentSession == null || currentSession.getAttribute("usuario") == null) {
-        response.sendRedirect("login.jsp"); // Redirige al login si no hay sesión activa
-        return;
-    } else {
-        Usuario usuario = (Usuario) currentSession.getAttribute("usuario");
-    }
-%>
-
 <!DOCTYPE html>
 <html>
 <head>

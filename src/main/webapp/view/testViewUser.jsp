@@ -33,7 +33,5 @@
     
     <li><a href="añadir_servicio.jsp">Añadir Nuevo Servicio</a></li>
 
-    
-    
 </body>
 </html>
