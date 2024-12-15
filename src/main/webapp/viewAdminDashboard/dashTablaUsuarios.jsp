@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+<%-- 
+    Document   : dashTablaUsuarios
+    Created on : 15 dic 2024, 3:32:46
+    Author     : PC
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <html lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -704,6 +710,3 @@
 
     </body>
 </html>
-
-
-

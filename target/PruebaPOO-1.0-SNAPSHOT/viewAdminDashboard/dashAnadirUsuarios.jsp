@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+<%-- 
+    Document   : dashAnadirUsuarios
+    Created on : 15 dic 2024, 3:30:31
+    Author     : PC
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <html lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">

@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+<%-- 
+    Document   : index
+    Created on : 15 dic 2024, 3:31:56
+    Author     : PC
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <html lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">

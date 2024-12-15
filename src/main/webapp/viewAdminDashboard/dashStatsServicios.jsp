@@ -1,9 +1,10 @@
-<!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
--->
-<html>
+<%-- 
+    Document   : dashStatsServicios
+    Created on : 15 dic 2024, 3:31:11
+    Author     : PC
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%><html>
     <head>
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
