@@ -18,19 +18,12 @@ public class ListaUsuariosServlet extends HttpServlet {
             throws ServletException, IOException {
         UsuarioDAO usuarioDAO = new UsuarioDAO();
         try {
+            // Obtener lista de usuarios desde la base de datos
             List<Usuario> usuarios = usuarioDAO.obtenerTodosLosUsuarios();
 
-            // Debug: Verificar la lista de usuarios
-            if (usuarios == null || usuarios.isEmpty()) {
-                System.out.println("La lista de usuarios está vacía o es nula.");
-            } else {
-                for (Usuario usuario : usuarios) {
-                    System.out.println("ID: " + usuario.getId() + ", Usuario: " + usuario.getUsername() + ", Email: " + usuario.getEmail() + ", Rol: " +usuario.getRol());
-                }
-            }
-
+            // Enviar lista de usuarios al JSP
             request.setAttribute("usuarios", usuarios);
-            request.getRequestDispatcher("/view/lista_usuarios.jsp").forward(request, response);
+            request.getRequestDispatcher("/viewAdminDashboard/index.jsp").forward(request, response);
         } catch (SQLException e) {
             e.printStackTrace();
             response.getWriter().println("Error en la base de datos: " + e.getMessage());

@@ -41,10 +41,11 @@
                         %>
                         <button class="user-btn"><%= usuario.getUsername() %>!</button>
                         <div class="dropdown-content">
-                            <a href="../view/login.jsp">Perfil De Usuario</a>
+                            <form action="../ListaUsuariosServlet" method="get">
+                                <a href="#"><button style="background-color: #0056b3; color: white;" class="logout-btn" type="submit">Perfil de Usuario</button></a>
+                            </form>  
                             <form action="../LogoutServlet" method="get">
                                 <a href="#"><button style="background-color: red; color: white;" class="logout-btn" type="submit">Cerrar sesión</button></a>
-                                
                             </form>     
 
                         </div>

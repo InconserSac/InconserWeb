@@ -4,7 +4,10 @@
     Author     : PC
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page session="true" %>
+<%@ page import="java.util.List" %>
+<%@ page import="model.Usuario" %>
 <html lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -51,9 +54,23 @@
                                 <img src="../build/images/TeamPicture.png " alt="..." class="img-circle profile_img">
                             </div>
                             <div class="profile_info">
+                                <% 
+          // Obtener el usuario de la sesión
+          model.Usuario usuario = (model.Usuario) session.getAttribute("usuario");
+        
+          if (usuario != null) {
+                                %>
                                 <span>Bienvenido,</span>
                                 <!-- Nombre de Usuario - Database:V -->
-                                <h2>Khynox</h2>
+                                <h2><%= usuario.getUsername() %>!</h2>
+                                <% 
+                                    } else {
+                                %>
+                                <span>Bienvenido,</span>
+                                <!-- Nombre de Usuario - Database:V -->
+                                <h2>No User</h2>                                <% 
+                                    }
+                                %>  
                             </div>
                         </div>
                         <!-- /menu profile quick info -->
@@ -63,22 +80,22 @@
                             <div class="menu_section">
                                 <h3>General</h3>
                                 <ul class="nav side-menu">
-                                    <li><a href="index.html"><i class="fa fa-home"></i> Inicio</a></li>
+                                    <li><a href="index.html"><i></i> Inicio</a></li>
                                     <!-- Aqui va Formularios para añadir Usuarios / Servicios / Profesionales  -->
-                                    <li><a><i class="fa fa-edit"></i> Formularios <span class="fa fa-chevron-down"></span></a>
+                                    <li><a><i></i> Formularios <span class="fa fa-chevron-down"></span></a>
                                         <ul class="nav child_menu">
                                             <li><a href="dashAnadirUsuarios.html">Añadir Usuario</a></li>
                                             <li><a href="dashAnadirServicios.html">Añadir Servicio</a></li>
                                         </ul>
                                     </li>
-                                    <li><a><i class="fa fa-table"></i> Tablas <span class="fa fa-chevron-down"></span></a>
+                                    <li><a><i></i> Tablas <span class="fa fa-chevron-down"></span></a>
                                         <ul class="nav child_menu">
                                             <li><a href="tables.html">Usuarios</a></li>
                                             <li><a href="tables_dynamic.html">Profesionales</a></li>
                                             <li><a href="tables_dynamic.html">Servicios</a></li>
                                         </ul>
                                     </li>
-                                    <li><a><i class="fa fa-bar-chart-o"></i> Estadisticas <span class="fa fa-chevron-down"></span></a>
+                                    <li><a><i></i> Estadisticas <span class="fa fa-chevron-down"></span></a>
                                         <ul class="nav child_menu">
                                             <li><a href="#">Usuarios</a></li>
                                             <li><a href="#">Servicios</a></li>
@@ -89,7 +106,7 @@
                             <div class="menu_section">
                                 <h3>Sitios Adicionales</h3>
                                 <ul class="nav side-menu">                
-                                    <li><a href="../index.html"><i class="fa fa-laptop"></i> Pagina Principal <span class="label label-success pull-right"></span></a></li>
+                                    <li><a href="../index.html"><i></i> Pagina Principal <span class="label label-success pull-right"></span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -104,9 +121,28 @@
                         <nav class="nav navbar-nav">
                             <ul class=" navbar-right">
                                 <li class="nav-item dropdown open" style="padding-left: 15px;">
+
+
+                                    <% 
+        
+        if (usuario != null) {
+                                    %>
                                     <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-                                        <img src="images/img.jpg" alt="">Khynox
+                                        <%= usuario.getUsername() %>!
                                     </a>
+                                    <% 
+                                        } else {
+                                    %>
+                                    <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                                        Registrate Intruso
+                                    </a>                                    
+                                    <% 
+                                        }
+                                    %>
+
+
+
+
                                     <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item"  href="javascript:;"> Perfil</a>
                                         <a class="dropdown-item"  href="javascript:;">
@@ -204,58 +240,60 @@
 
                         <!-- Tabla de Clientes Simples -->
 
-                        <div class="col-md-6 col-sm-6  ">
+                        <div class="col-md-6 col-sm-6">
                             <div class="x_panel">
                                 <div class="x_title">
-                                    <h2> Clientes <small> Datos Basicos de Clientes Registrados </small></h2>
+                                    <h2> Usuarios <small>Datos Básicos de Usuarios Registrados</small></h2>
                                     <ul class="nav navbar-right panel_toolbox">
-                                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                                        </li>
+                                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
                                         <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                            <form action="../ListaUsuariosServlet" method="get">
+                                                <a href="#"><button type="submit" class="btn btn-primary">Cargar Usuarios</button><i class="fa fa-wrench"></i></a>
+                                            </form>
                                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                 <a class="dropdown-item" href="#">Settings 1</a>
                                                 <a class="dropdown-item" href="#">Settings 2</a>
                                             </div>
                                         </li>
-                                        <li><a class="close-link"><i class="fa fa-close"></i></a>
-                                        </li>
+                                        <li><a class="close-link"><i class="fa fa-close"></i></a></li>
                                     </ul>
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="x_content">
-
                                     <table class="table table-striped">
                                         <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th>First Name</th>
-                                                <th>Last Name</th>
-                                                <th>Username</th>
+                                                <th>Nombre de Usuario</th>
+                                                <th>Email</th>
+                                                <th>Rol</th>
                                             </tr>
                                         </thead>
                                         <tbody>
+                                            <% 
+                                                // Obtener la lista de usuarios del atributo de la solicitud
+                                                List<model.Usuario> usuarios = (List<model.Usuario>) request.getAttribute("usuarios");
+                                                if (usuarios != null && !usuarios.isEmpty()) {
+                                                    for (model.Usuario u : usuarios) {
+                                            %>
                                             <tr>
-                                                <th scope="row">1</th>
-                                                <td>Mark</td>
-                                                <td>Otto</td>
-                                                <td>@mdo</td>
+                                                <th scope="row"><%= u.getId() %></th>
+                                                <td><%= u.getUsername() %></td>
+                                                <td><%= u.getEmail() %></td>
+                                                <td><%= u.getRol().getNombre() %></td>
                                             </tr>
+                                            <% 
+                                                    }
+                                                } else { 
+                                            %>
                                             <tr>
-                                                <th scope="row">2</th>
-                                                <td>Jacob</td>
-                                                <td>Thornton</td>
-                                                <td>@fat</td>
+                                                <td colspan="4" style="text-align: center;">No hay usuarios registrados.</td>
                                             </tr>
-                                            <tr>
-                                                <th scope="row">3</th>
-                                                <td>Larry</td>
-                                                <td>the Bird</td>
-                                                <td>@twitter</td>
-                                            </tr>
+                                            <% 
+                                                } 
+                                            %>
                                         </tbody>
                                     </table>
-
                                 </div>
                             </div>
                         </div>
@@ -289,9 +327,9 @@
                                         <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th>First Name</th>
-                                                <th>Last Name</th>
-                                                <th>Username</th>
+                                                <th>Nombre</th>
+                                                <th>Apellido</th>
+                                                <th>Usuario</th>
                                             </tr>
                                         </thead>
                                         <tbody>
