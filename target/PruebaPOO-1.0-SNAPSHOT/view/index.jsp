@@ -1,15 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ page import="model.Usuario" %>
-<%@ page import="jakarta.servlet.http.HttpSession" %>
-<%
-    HttpSession currentSession = request.getSession(false);
-    if (currentSession == null || currentSession.getAttribute("usuario") == null) {
-        response.sendRedirect("login.jsp"); // Redirige al login si no hay sesión activa
-        return;
-    } else {
-        Usuario usuario = (Usuario) currentSession.getAttribute("usuario");
-    }
-%>
+<%@ page session="true" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -42,11 +33,32 @@
                         </ul>
                     </nav>
                     <div class="user-menu">
+                        <% 
+        // Obtener el usuario de la sesión
+        model.Usuario usuario = (model.Usuario) session.getAttribute("usuario");
+        
+        if (usuario != null) {
+                        %>
+                        <button class="user-btn"><%= usuario.getUsername() %>!</button>
+                        <div class="dropdown-content">
+                            <a href="../view/login.jsp">Perfil De Usuario</a>
+                            <form action="../LogoutServlet" method="get">
+                                <a href="#"><button style="background-color: red; color: white;" class="logout-btn" type="submit">Cerrar sesión</button></a>
+                                
+                            </form>     
+
+                        </div>
+                        <% 
+                            } else {
+                        %>
                         <button class="user-btn">Usuario</button>
                         <div class="dropdown-content">
                             <a href="../view/login.jsp">Iniciar Sesion</a>
                             <a href="../Pages/IniciarSesion.html">Registrarse</a>
                         </div>
+                        <% 
+                            }
+                        %>
                     </div>
                 </div>
             </header>

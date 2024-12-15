@@ -12,7 +12,7 @@
         <header class="fixed-header">
             <div class="header-container">
                 <div class="logo">
-                    <h1>Inconser</h1>
+                        <h1>I n c o n s e r</h1>
                     <h2>Arquitectura e Ingenieria</h2>
                 </div>
                 <nav>
